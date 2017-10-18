@@ -20,7 +20,6 @@ class FeedItem extends Component {
 }
 
 FeedItem.PropTypes ={
-  unsplashLink: PropTypes.func.isRequired,
   url: PropTypes.func.isRequired,
   creator: PropTypes.func.isRequired,
   regUrl: PropTypes.func.isRequired,

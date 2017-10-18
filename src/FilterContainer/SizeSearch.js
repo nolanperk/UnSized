@@ -5,23 +5,24 @@ import PropTypes from 'prop-types';
 class SizeSearch extends Component {
   render() {
     return (
-      <div className="SizeSearch">
+      <span className="SizeSearch">
         <input
           type="number"
-          placeholder="Width"
+          placeholder=""
           className="sizeInput--Width"
           onChange={this.props.filterWidthHandler}
           value={this.props.filterWidth}
         />
-        <span> x </span>
+        <span className="inputLabel">width</span>
         <input
           type="number"
-          placeholder="Height"
+          placeholder=""
           className="sizeInput--Height"
           onChange={this.props.filterHeightHandler}
           value={this.props.filterHeight}
         />
-      </div>
+        <span className="inputLabel">height</span>
+      </span>
     );
   }
 }

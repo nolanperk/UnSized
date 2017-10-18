@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-
+import FilterSearch from './FilterSearch';
+import SizeSearch from './SizeSearch';
 
 
 class FilterContainer extends Component {
@@ -11,33 +12,16 @@ class FilterContainer extends Component {
     return (
       <form className="FilterContainer" onSubmit={this.props.submitHandler}>
 
-        <span className="FilterSearch">
-          <input
-            type="text"
-            placeholder="filter images"
-            onChange={this.props.filterSearchHandler}
-            value={this.props.filterSearch}
-          />
-        </span>
+        <FilterSearch
+          filterSearchHandler={this.props.filterSearchHandler}
+          filterSearch={this.props.filterSearch}
 
-        <span className="SizeSearch">
-          <input
-            type="number"
-            placeholder=""
-            className="sizeInput--Width"
-            onChange={this.props.filterWidthHandler}
-            value={this.props.filterWidth}
-          />
-          <span className="inputLabel">width</span>
-          <input
-            type="number"
-            placeholder=""
-            className="sizeInput--Height"
-            onChange={this.props.filterHeightHandler}
-            value={this.props.filterHeight}
-          />
-          <span className="inputLabel">height</span>
-        </span>
+        />
+        <SizeSearch
+          filterWidthHandler={this.props.filterWidthHandler}
+          value={this.props.filterWidth}
+          value={this.props.filterHeight}
+        />
 
         <button type="submit">Go!</button>
 
