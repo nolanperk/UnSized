@@ -1,0 +1,87 @@
+.FilterWrapper {
+  position: fixed;
+  width: 150px;
+  margin: 25px 20px;
+
+
+
+  h1 {
+    font-size: 35px;
+    margin: 0;
+    vertical-align: top;
+    margin-right: 25px;
+
+    em {
+      font-style: normal;
+      opacity: 0.8;
+    }
+  }
+
+  .FilterContainer {
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+    overflow: hidden;
+
+    button {
+      background: transparent;
+      border: solid 2px white;
+      margin-top: 30px;
+      padding: 5px 25px;
+      border-radius: 4px;
+    }
+
+    input {
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid #757575;
+      color: $white;
+      @extend %sansB;
+      font-size: 20px;
+      padding: 10px 5px;
+      outline: 0;
+      font-size: 30px;
+      width: 100%;
+    }
+
+    .FilterSearch {
+      position: relative;
+
+      &::before {
+        content: " ";
+        width: 15px;
+        height: 15px;
+        background-image: url('../imgs/search-icon.png');
+        background-size: 15px 15px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+      input {
+        border: none;
+        @extend %sans;
+        font-size: 20px;
+        padding-left: 25px;
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+    .SizeSearch {
+      margin-top: 30px;
+
+      .inputLabel {
+        width: 100%;
+        color: #757575;
+        position: relative;
+        display: inline-block;
+        top: -3px;
+        @extend %sansB;
+      }
+
+      input {
+        margin-top: 20px;
+      }
+    }
+  }
+}

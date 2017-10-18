@@ -1,0 +1,22 @@
+$white: #fff;
+$black: #000;
+
+$test: #62e920;      // Test is a bright green just for testing purposes
+
+
+// FONT VARIABLES = = = = = = =
+
+$sans: 'open-sans', 'Helvetica', 'sans-serif';
+
+
+%sans {
+   font-family: $sans;
+   font-weight: 600;
+   font-style: normal;
+}
+
+%sansB {
+   font-family: $sans;
+   font-weight: 800;
+   font-style: normal;
+}

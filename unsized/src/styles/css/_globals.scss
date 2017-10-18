@@ -1,0 +1,54 @@
+* {
+   box-sizing: border-box;
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+   font-size: 62.5%;
+   height: 100%;
+}
+body {
+   font-size: 18px;
+   line-height: 1.6;
+   font-family: $sans;
+   background: $white;
+   color: #1a1a1a;
+   height: 100%;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+   -webkit-touch-callout: none !important;
+}
+
+html,
+body {
+   &.menuIsOpen,
+   &.noScroll {
+      overflow: hidden !important;
+   }
+}
+
+body {
+  @extend %sans;
+  background-color: $black;
+  color: $white;
+}
+%clear {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+   clear: both;
+  }
+}
+h1, h2, h3 {
+  @extend %sansB;
+}
+
+.App {
+  position: relative;
+  @extend %clear;
+}
