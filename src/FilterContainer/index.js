@@ -19,6 +19,7 @@ class FilterContainer extends Component {
         />
         <SizeSearch
           filterWidthHandler={this.props.filterWidthHandler}
+          filterHeightHandler={this.props.filterHeightHandler}
           value={this.props.filterWidth}
           value={this.props.filterHeight}
         />

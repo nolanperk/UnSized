@@ -32,12 +32,6 @@ class App extends Component {
       filterHeight: e.target.value
     });
   }
-
-  filterHeightHandler = e => {
-    this.setState({
-      filterHeight: e.target.value
-    });
-  }
   submitHandler = e => {
     e.preventDefault();
     let imgSearch = this.state.filterSearch;
